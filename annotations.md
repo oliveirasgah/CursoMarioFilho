@@ -10,6 +10,10 @@
     - Ter uma lista apenas dos vídeos que eu, com certeza, vou gostar.
 - __Como eu posso fazer isso com Data Science/ML?__
     - Criar uma solução de recomendação de vídeos.
+- __Como essa solução será usada em produção?__
+    - Através de um web app
+- __Como eu vou saber que deu certo?__
+    - Uso de métricas
 
 #### Possíveis abordagens
 - Ponto de corte
@@ -38,10 +42,14 @@
         - Sujeito a preferência do usuário no momento de escolha dos vídeos
         - O usuário pode decidir não assistir a um vídeo no momento
 - Métrica primária: dos top N vídeos, quantos eu coloco na lista de Watch Later
-- Métrica(s) secundária(s): quanto tempo eu passo selecionando vídeos
+- Exemplo de métrica secundária: quanto tempo eu passo selecionando vídeos
     - Não serão implementadas métricas secundárias
 
 ### 1.2 Como escolher um problema para resolver
+- Perguntas
+    - Como escolher o problema para trabalhar?
+    - Quais são os seus interesses?
+    - O quão fácil é achar dados para a sua solução?
 - É importante escolher projetos que sejam simples
     - Projetos complicados podem demorar muito e pode não ser possível entregar valor para a empresa
     - Dessa forma, é importante ter pequenas vitórias
@@ -52,16 +60,19 @@
         - Marketing
     - Time series
         - Previsão de demanda
+        - Previsão de acessos
         - Previsão de cancelamento
 - Projetos interessantes pessoais
     - Verificar quais são os meus interesses
     - Mantém a motivação para continuar os estudos
 - Complexidade para obtenção de dados para a solução
     - De preferência, buscar datasets prontos
-    - Caso não haja, será preciso encontrar fontes de informação
+    - Caso não haja, será preciso encontrar __fontes de informação__
         - É importante fazer uma lista de fontes de informação ideais
+            - Uma suposta fonte que possuísse exatamente os dados que gostaríamos de ter
+            - A partir disso, selecionar as fontes de dados mais interessantes
     - Mínimo de dados precisos
-        - No caso do projeto do curso, características dos vídeos e label
+        - No caso do projeto do curso, características dos vídeos (de preferência, o título) e label
 
 ## 2. Prepare os Dados
 ### 2.1 Criando o coletor da página de busca do YouTube
