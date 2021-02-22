@@ -79,3 +79,22 @@
 - O objetivo é obter todos os dados necessários para a realização do projeto
 - De preferência, realizar versionamento dos dados que estão sendo usados
 - É possível buscar formas de paginação no YouTube online
+
+#### 2.7 Criando as primeiras features
+- Precision
+    - _"De todos os exemplos que o meu modelo diz
+    que são positivos, quantos ele realmente acertou?"_
+- Recall
+    - _"De todos os exemplos que são realmente positivos, quantos o meu modelo previu como
+    positivos?"_
+
+#### 2.9 Active Learning e adicionando features de texto do título
+- Active Learning
+    - Quando utilizar?
+        - Quando há um orçamento muito pequeno
+            - É muito caro fazer anotações em novos exemplos
+        - Há pouco tempo para fazer anotações em novos exemplos
+            - Ao invés de realizar as anotações aleatóriamente, as anotações são realizadas em um conjunto específico de exemplos que nos tragam muito mais ganho nas anotações
+        - Exemplo: dados médicos
+            - É necessário ter um corpo de especialistas para analisar novos exemplos, o que pode se tornar uma tarefa custosa e pode demorar um tempo
+    
