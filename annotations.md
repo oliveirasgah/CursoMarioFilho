@@ -90,6 +90,8 @@
 
 #### 2.9 Active Learning e adicionando features de texto do título
 - Active Learning
+    - O que é
+        - Técnica para _labeling_ para melhorar a performance de modelos, adicionando _labels_ em exemplos em que o modelo possui dificuldade na classificação
     - Quando utilizar?
         - Quando há um orçamento muito pequeno
             - É muito caro fazer anotações em novos exemplos
@@ -98,3 +100,14 @@
         - Exemplo: dados médicos
             - É necessário ter um corpo de especialistas para analisar novos exemplos, o que pode se tornar uma tarefa custosa e pode demorar um tempo
     
+#### 2.10 Selecionando exemplos para o Active Learning
+- Selecionar exemplos que não possuem uma _label_
+- Realizar todo o processo de limpeza e seleção de features
+- Utilizar o mesmo _vectorizer_ já criado para os títulos
+- Utilizar o mesmo modelo treinado para obtenção das previsões
+- Inserir previsões no _data frame_ sem _labels_
+- Observar exemplos que possuem previsões próximas de 50%
+    - São exemplos em que o modelo possui dificuldade em saber qual o valor que deve ser classificado
+    - Exemplos fora disso são considerados extremos e não beneficiam o modelo em sua anotação
+- Reduzir o _range_ dos valores das previsões até obter o número de exemplos alvo
+- Exportar em arquivo CSV para análise e _labeling_
